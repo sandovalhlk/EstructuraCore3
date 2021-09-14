@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vSBTa8HwgKmMXSWBHpATHxjEVdl2CbgadUlvLBcc7lgSbGGxzgrBizvyIAUN0Ctl7fgVDrsbtKHtphzgR7omLA==",
+  "dgSpecHash": "2e7sfOxweTeiIy6E61j3OrB+hDbsB3znv/rBpIBhdvE4ZxINl2HHLf1G4cVihXg6pmNzxplsVdlee6UzQlji5g==",
   "success": true,
-  "projectFilePath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.UnitTest\\AppGlobal.UnitTest.csproj",
+  "projectFilePath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.UnitTest\\AppGlobal.UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Omar\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Omar\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

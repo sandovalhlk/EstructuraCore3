@@ -1,0 +1,53 @@
+﻿using AppGlobal.Core.Entidades;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace AppGlobal.Infrastructure.Data.Configurations
+{
+    public class CommentConfiguration : IEntityTypeConfiguration<Comment>
+    {
+        public void Configure(EntityTypeBuilder<Comment> builder)
+        {
+            builder.ToTable("Comentario");
+            builder.HasKey(e => e.CommentId);
+
+            builder.Property(e => e.CommentId)
+            .HasColumnName("IdComentario")
+            .ValueGeneratedNever();
+
+            builder.Property(e => e.PostId)
+          .HasColumnName("IdPublicacion");
+
+            builder.Property(e => e.UserId)
+         .HasColumnName("IdUsuario");
+
+
+            builder.Property(e => e.IsActive)
+       .HasColumnName("Activo");
+
+
+
+            builder.Property(e => e.Description)
+                .IsRequired()
+                .HasColumnName("Descripcion")
+                .HasMaxLength(500)
+                .IsUnicode(false);
+
+            builder.Property(e => e.Date)
+            .HasColumnName("Fecha")
+            .HasColumnType("datetime");
+
+            builder.HasOne(d => d.post)
+                .WithMany(p => p.Comments)
+                .HasForeignKey(d => d.PostId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Comentario_Publicacion");
+
+            builder.HasOne(d => d.user)
+                .WithMany(p => p.Comments)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Comentario_Usuario");
+        }
+    }
+}

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\AppGlobal.Core.csproj",
+      "projectUniqueName": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
       "projectName": "AppGlobal.Core",
-      "projectPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\AppGlobal.Core.csproj",
+      "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
       "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-      "outputPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\obj\\",
+      "outputPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Omar\\AppData\\Roaming\\NuGet\\NuGet.Config",

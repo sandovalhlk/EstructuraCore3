@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I0/o6p0EdZ5aAv+sIKkb4kHOTBSvv/JzTcRBVz66nAXVp2aJa9zaabsWMZ2ncr7g2jKRqM0bxConrFP9ujOKyA==",
+  "dgSpecHash": "m2dpa96zOzS2qI/t4gFS1jFWTVv3fzGS7k2YrrAcGjeDBHvmID90y0/5tGRS/t6C1No/nXaVUZL8sdd4Xfde6A==",
   "success": true,
-  "projectFilePath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\AppGlobal.Core.csproj",
+  "projectFilePath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.IntegrationTest\\AppGlobal.IntegrationTest.csproj": {}
+    "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.IntegrationTest\\AppGlobal.IntegrationTest.csproj": {}
   },
   "projects": {
-    "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.IntegrationTest\\AppGlobal.IntegrationTest.csproj": {
+    "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.IntegrationTest\\AppGlobal.IntegrationTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.IntegrationTest\\AppGlobal.IntegrationTest.csproj",
+        "projectUniqueName": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.IntegrationTest\\AppGlobal.IntegrationTest.csproj",
         "projectName": "AppGlobal.IntegrationTest",
-        "projectPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.IntegrationTest\\AppGlobal.IntegrationTest.csproj",
+        "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.IntegrationTest\\AppGlobal.IntegrationTest.csproj",
         "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-        "outputPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.IntegrationTest\\obj\\",
+        "outputPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.IntegrationTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Omar\\AppData\\Roaming\\NuGet\\NuGet.Config",

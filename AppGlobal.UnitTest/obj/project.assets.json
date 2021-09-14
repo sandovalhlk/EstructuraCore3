@@ -5922,11 +5922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.UnitTest\\AppGlobal.UnitTest.csproj",
+      "projectUniqueName": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.UnitTest\\AppGlobal.UnitTest.csproj",
       "projectName": "AppGlobal.UnitTest",
-      "projectPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.UnitTest\\AppGlobal.UnitTest.csproj",
+      "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.UnitTest\\AppGlobal.UnitTest.csproj",
       "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-      "outputPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.UnitTest\\obj\\",
+      "outputPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Omar\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj": {}
+    "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\AppGlobal.Core.csproj": {
+    "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\AppGlobal.Core.csproj",
+        "projectUniqueName": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
         "projectName": "AppGlobal.Core",
-        "projectPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\AppGlobal.Core.csproj",
+        "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
         "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-        "outputPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\obj\\",
+        "outputPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Omar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj": {
+    "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj",
         "projectName": "AppGlobal.Infrastructure",
-        "projectPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj",
+        "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-        "outputPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Infrastructure\\obj\\",
+        "outputPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Omar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\AppGlobal.Core.csproj": {
-                "projectPath": "C:\\PROYECTO APP INVENTARIO\\Aplicacion\\StructureBlank\\SlnStructureGlobal\\AppGlobal.Core\\AppGlobal.Core.csproj"
+              "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj": {
+                "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj"
               }
             }
           }
@@ -98,7 +98,29 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.3, )"
             }
