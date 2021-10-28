@@ -9,9 +9,9 @@ namespace AppGlobal.Infrastructure.Data.Configurations
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.ToTable("Usuario");
-            builder.HasKey(e => e.UserId);
+            builder.HasKey(e => e.Id);
 
-            builder.Property(e => e.UserId).HasColumnName("IdUsuario");
+            builder.Property(e => e.Id).HasColumnName("IdUsuario");
 
             builder.Property(e => e.LastName)
             .HasColumnName("Apellidos")

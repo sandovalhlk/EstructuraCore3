@@ -1,0 +1,13 @@
+Esquema de Funcionalidad
+
+Cada entidad tiene una interfaz q es por doden se accesa a sus propiedades o ejecucion
+
+Repository parten: Se enfoca en replicar cada entidad de dominio para ser manejada
+
+Unit Of Work: condensa todos los repositorio en una sola entidad
+
+
+Services: Accesa a las entidades mediante el unit of work y asi a sus funciones genericas de repositorio, ademas
+aqui se crean las reglas de negocio necesarias
+
+Controler se ejecutan las acceso definidas en la aplicacion.

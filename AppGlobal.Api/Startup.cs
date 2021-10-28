@@ -1,4 +1,5 @@
 using AppGlobal.Core.Interfaces;
+using AppGlobal.Core.Services;
 using AppGlobal.Infrastructure.Data;
 using AppGlobal.Infrastructure.Filters;
 using AppGlobal.Infrastructure.Repositories;
@@ -35,7 +36,10 @@ namespace AppGlobal.Api
 
             services.AddDbContext<SocialMediaContext>(option => option.UseSqlServer(Configuration.GetConnectionString("SocialMedia")));
 
-            services.AddTransient<IPostRepository, PostRepository>();
+            services.AddTransient<IPostService, PostService>();
+            
+            services.AddScoped(typeof(IRepository<>),typeof(BaseRepository<>));
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             services.AddMvc(options =>
             { //validacion global de los modelos q se ejecuten

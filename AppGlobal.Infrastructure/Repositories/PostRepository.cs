@@ -24,7 +24,7 @@ namespace AppGlobal.Infrastructure.Repositories
 
         public async Task<Post> GetPost( int id)
         {
-            var posts = await _context.Posts.FirstOrDefaultAsync(x=>x.PostId==id);
+            var posts = await _context.Posts.FirstOrDefaultAsync(x=>x.Id==id);
             return posts;
         }
 
@@ -36,7 +36,7 @@ namespace AppGlobal.Infrastructure.Repositories
 
         public async Task<bool> UpdatePost(Post post)
         {
-            var currentPost =await GetPost(post.PostId);
+            var currentPost =await GetPost(post.Id);
             currentPost.Date = post.Date;
             currentPost.Description = post.Description;
             currentPost.Image = post.Image;

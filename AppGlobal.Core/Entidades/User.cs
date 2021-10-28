@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AppGlobal.Core.Entidades
 {
-    public partial class User
+    public partial class User: BaseEntity
     {
         public User()
         {
@@ -11,7 +11,7 @@ namespace AppGlobal.Core.Entidades
             Posts = new HashSet<Post>();
         }
 
-        public int UserId { get; set; }
+        
         public string FirsName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
