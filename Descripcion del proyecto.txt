@@ -10,4 +10,4 @@ Unit Of Work: condensa todos los repositorio en una sola entidad
 Services: Accesa a las entidades mediante el unit of work y asi a sus funciones genericas de repositorio, ademas
 aqui se crean las reglas de negocio necesarias
 
-Controler se ejecutan las acceso definidas en la aplicacion.
+Controler se ejecutan las acceso definidas en la aplicacion. cada controlador lleva a cabo un proceso del sistema

@@ -13,14 +13,14 @@ namespace AppGlobal.Infrastructure.Repositories
     public class BaseRepository<T> : IRepository<T> where T : BaseEntity
     {
         private readonly SocialMediaContext _context;
-        private  readonly DbSet<T> _entitties;
+        protected readonly DbSet<T> _entitties;
         public BaseRepository(SocialMediaContext context)
         {
             _context = context;
             _entitties = context.Set<T>();
         }
 
-        public IEnumerable<T> GetAll()
+        public  IEnumerable<T> GetAll()
         {
             return  _entitties.AsEnumerable();
         }
@@ -31,22 +31,22 @@ namespace AppGlobal.Infrastructure.Repositories
 
         public async Task Add(T entity)
         {
-            _entitties.Add(entity);
-            await _context.SaveChangesAsync();
+            await  _entitties.AddAsync(entity);
+            
         }
 
-        public async Task Update(T entity)
+        public void Update(T entity)
         {
 
             _entitties.Update(entity);
-            await _context.SaveChangesAsync();
+            
         }
 
         public async Task Delete(int id)
         {
            T entity= await GetById(id);
             _entitties.Remove(entity);
-            await _context.SaveChangesAsync();
+            
         }
 
         

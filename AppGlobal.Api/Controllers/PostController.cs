@@ -23,7 +23,7 @@ namespace AppGlobal.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetPost()
+        public  IActionResult GetPost()
         {
             var posts =  _postService.GetPosts();
             var postsDto = _mapper.Map<IEnumerable<PostDto>>(posts);

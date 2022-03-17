@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 
+
 namespace AppGlobal.Api
 {
     public class Startup
@@ -29,16 +30,24 @@ namespace AppGlobal.Api
         {
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             //funcion para no validar el modelo con el api controler
-            services.AddControllers()
-                .ConfigureApiBehaviorOptions(options=> {
-                    options.SuppressModelStateInvalidFilter = true;
-                });
+            services.AddControllers(options =>
+            {
+                options.Filters.Add<GlobalExceptionFilter>();
+            })
+                .AddNewtonsoftJson(option =>
+            {
+                option.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            })
+            .ConfigureApiBehaviorOptions(options =>
+                 {
+                     options.SuppressModelStateInvalidFilter = true;
+                 });
 
             services.AddDbContext<SocialMediaContext>(option => option.UseSqlServer(Configuration.GetConnectionString("SocialMedia")));
 
             services.AddTransient<IPostService, PostService>();
-            
-            services.AddScoped(typeof(IRepository<>),typeof(BaseRepository<>));
+
+            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             services.AddMvc(options =>
@@ -52,7 +61,7 @@ namespace AppGlobal.Api
 
         }
 
-       
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

@@ -1,7 +1,9 @@
 ﻿using AppGlobal.Core.Entidades;
+using AppGlobal.Core.Exceptions;
 using AppGlobal.Core.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,7 +29,7 @@ namespace AppGlobal.Core.Services
             return await _unitOfWork.PostRepository.GetById(id);
         }
 
-        public  IEnumerable<Post> GetPosts()
+        public IEnumerable<Post> GetPosts()
         {
             return  _unitOfWork.PostRepository.GetAll();
         }
@@ -42,9 +44,19 @@ namespace AppGlobal.Core.Services
                 throw new Exception("User dosen't exist");
             }
 
+            var userPost = await _unitOfWork.PostRepository.GetPostsByUser(post.UserId);
+            if(userPost.Count()<10)
+            {
+                var lasPost = userPost.LastOrDefault();
+                if((lasPost.Date-DateTime.Now).TotalDays < 7)
+                {
+                    throw new BusinessException("You are not able to publish the post");
+                }
+            }
+
             if (post.Description.Contains("sexo"))
             {
-                throw new Exception("Content not allowed");
+                throw new BusinessException("Content not allowed");
             }
 
             await _unitOfWork.PostRepository.Add(post);
@@ -52,8 +64,10 @@ namespace AppGlobal.Core.Services
         }
         public async Task<bool> UpdatePost(Post post)
         {
-             await _unitOfWork.PostRepository.Update(post);
+              _unitOfWork.PostRepository.Update(post);
+           await _unitOfWork.SaveChangesAsyn();
             return true;
+
         }
 
         public async Task<bool> DeletePost(int id)
