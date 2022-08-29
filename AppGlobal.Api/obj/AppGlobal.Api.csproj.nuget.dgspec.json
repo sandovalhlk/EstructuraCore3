@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Api\\AppGlobal.Api.csproj": {}
+    "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Api\\AppGlobal.Api.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Api\\AppGlobal.Api.csproj": {
+    "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Api\\AppGlobal.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Api\\AppGlobal.Api.csproj",
+        "projectUniqueName": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Api\\AppGlobal.Api.csproj",
         "projectName": "AppGlobal.Api",
-        "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Api\\AppGlobal.Api.csproj",
-        "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Api\\obj\\",
+        "projectPath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Api\\AppGlobal.Api.csproj",
+        "packagesPath": "C:\\Users\\Allan Sandoval\\.nuget\\packages\\",
+        "outputPath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Omar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Allan Sandoval\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\Allan Sandoval\\AppData\\Local\\Esri\\NuGet": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj": {
-                "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj"
+              "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj": {
+                "projectPath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj"
               },
-              "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj": {
-                "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj"
+              "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj": {
+                "projectPath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj"
               }
             }
           }
@@ -80,21 +85,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj": {
+    "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
+        "projectUniqueName": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
         "projectName": "AppGlobal.Core",
-        "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
-        "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\obj\\",
+        "projectPath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
+        "packagesPath": "C:\\Users\\Allan Sandoval\\.nuget\\packages\\",
+        "outputPath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Omar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Allan Sandoval\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,7 +111,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\Allan Sandoval\\AppData\\Local\\Esri\\NuGet": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -134,21 +144,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj": {
+    "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj",
+        "projectUniqueName": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj",
         "projectName": "AppGlobal.Infrastructure",
-        "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Infrastructure\\obj\\",
+        "projectPath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Infrastructure\\AppGlobal.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Allan Sandoval\\.nuget\\packages\\",
+        "outputPath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Omar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Allan Sandoval\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -156,14 +170,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\Allan Sandoval\\AppData\\Local\\Esri\\NuGet": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj": {
-                "projectPath": "C:\\Proyecto Core\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj"
+              "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj": {
+                "projectPath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj"
               }
             }
           }
@@ -220,7 +235,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }
