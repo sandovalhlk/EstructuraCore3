@@ -1,6 +1,9 @@
-﻿using AppGlobal.Core.Entidades;
+﻿using AppGlobal.Core.CustomEntities;
+using AppGlobal.Core.Entidades;
 using AppGlobal.Core.Exceptions;
 using AppGlobal.Core.Interfaces;
+using AppGlobal.Core.QueryFilters;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +19,12 @@ namespace AppGlobal.Core.Services
         //private readonly IRepository<User> _userRepository;
 
         private readonly IUnitOfWork _unitOfWork;
+        private readonly PaginationOptions _paginationOptions;
 
-        public PostService(IUnitOfWork unitOfWork)
+        public PostService(IUnitOfWork unitOfWork, IOptions<PaginationOptions> options)
         {
             _unitOfWork= unitOfWork;
+            _paginationOptions = options.Value;
             
         }
 
@@ -29,13 +34,49 @@ namespace AppGlobal.Core.Services
             return await _unitOfWork.PostRepository.GetById(id);
         }
 
-        public IEnumerable<Post> GetPosts()
+
+        //Filtrado de informacion por conjunto de parametros dentro de un objeto
+        //public IEnumerable<Post> GetPosts(PostQueryFilter filters)
+        //{   
+        //    var  posts  =_unitOfWork.PostRepository.GetAll();
+
+        //    if (filters.UserId != null)
+        //        posts = posts.Where(x=>x.UserId==filters.UserId);
+
+        //    if (filters.Date != null)
+        //        posts = posts.Where(x => x.Date.ToShortDateString() == filters.Date?.ToShortDateString());
+
+        //    if (filters.Description != null)
+        //        posts = posts.Where(x => x.Description.ToLower().Contains(filters.Description.ToLower()));
+
+        //    return posts;
+
+        //}
+
+        public PagedList<Post> GetPosts(PostQueryFilter filters)
         {
-            return  _unitOfWork.PostRepository.GetAll();
+            filters.PageNumber = filters.PageNumber == 0 ? _paginationOptions.DefaultPageNumber : filters.PageNumber;
+
+            filters.PageSize = filters.PageSize == 0 ? _paginationOptions.DefaultPageSize : filters.PageSize;
+
+            var posts = _unitOfWork.PostRepository.GetAll();
+
+            if (filters.UserId != null)
+                posts = posts.Where(x => x.UserId == filters.UserId);
+
+            if (filters.Date != null)
+                posts = posts.Where(x => x.Date.ToShortDateString() == filters.Date?.ToShortDateString());
+
+            if (filters.Description != null)
+                posts = posts.Where(x => x.Description.ToLower().Contains(filters.Description.ToLower()));
+
+            var pagedPosts = PagedList<Post>.Create(posts, filters.PageNumber, filters.PageSize);
+
+            return pagedPosts;
+
         }
 
 
-      
         public async Task InsertPost(Post post)
         {
             var user = await _unitOfWork.PostRepository.GetById(post.UserId);

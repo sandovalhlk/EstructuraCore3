@@ -2,11 +2,15 @@ using AppGlobal.Core.Interfaces;
 using AppGlobal.Core.Services;
 using AppGlobal.Infrastructure.Data;
 using AppGlobal.Infrastructure.Filters;
+using AppGlobal.Infrastructure.Interfaces;
+using AppGlobal.Core.CustomEntities;
 using AppGlobal.Infrastructure.Repositories;
+using AppGlobal.Infrastructure.Services;
 using AutoMapper;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,18 +41,27 @@ namespace AppGlobal.Api
                 .AddNewtonsoftJson(option =>
             {
                 option.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                option.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
             })
             .ConfigureApiBehaviorOptions(options =>
                  {
                      options.SuppressModelStateInvalidFilter = true;
                  });
 
+            services.Configure<PaginationOptions>(Configuration.GetSection("Pagination"));
             services.AddDbContext<SocialMediaContext>(option => option.UseSqlServer(Configuration.GetConnectionString("SocialMedia")));
 
             services.AddTransient<IPostService, PostService>();
 
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddSingleton<IUriService>(provider =>
+            {
+                var accesor = provider.GetRequiredService<IHttpContextAccessor>();
+                var request = accesor.HttpContext.Request;
+                var absoluteUri = string.Concat(request.Scheme, "://",request.Host.ToUriComponent());
+                return new UriService(absoluteUri);
+            });
 
             services.AddMvc(options =>
             { //validacion global de los modelos q se ejecuten

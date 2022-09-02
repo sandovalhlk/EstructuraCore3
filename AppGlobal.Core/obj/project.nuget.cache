@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "45uwxp2xqGLuqM5SZdHfIn/180YWJd8x6MJk2CRqtJjz29XNWj5Oe9RxIw6XDFmSCrNybmxkNa7sL0++z/YrUQ==",
+  "dgSpecHash": "3EtPqcvGLcvanMQn3/KCkStEoz9OwnQC75YEMy4o39LzFXWYkKcQwD/NK/zSlIa4yyLiSbY2YkJk0rmLrxZG4A==",
   "success": true,
   "projectFilePath": "C:\\PROYECTOS PERSONALES\\EstructuraCore3\\AppGlobal.Core\\AppGlobal.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Allan Sandoval\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Allan Sandoval\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Allan Sandoval\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Allan Sandoval\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

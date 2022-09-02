@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AppGlobal.Core.CustomEntities;
 
 namespace AppGlobal.Api.Responses
 {
@@ -12,5 +9,6 @@ namespace AppGlobal.Api.Responses
             Data = data;
         }
         public T Data { get; set; }
+        public Metadata Meta { get; set; }
     }
 }
