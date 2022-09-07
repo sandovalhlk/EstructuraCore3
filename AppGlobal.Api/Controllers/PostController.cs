@@ -6,6 +6,7 @@ using AppGlobal.Core.Interfaces;
 using AppGlobal.Core.QueryFilters;
 using AppGlobal.Infrastructure.Interfaces;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ using System.Threading.Tasks;
 
 namespace AppGlobal.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PostController : ControllerBase
@@ -82,7 +84,7 @@ namespace AppGlobal.Api.Controllers
         }
 
 
-
+        [HttpPost]
         public async Task<IActionResult> Post(PostDto postDto)
         {
             var post = _mapper.Map<Post>(postDto);
