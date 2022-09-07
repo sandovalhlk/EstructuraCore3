@@ -1,13 +1,21 @@
-Esquema de Funcionalidad
+Project funtionality
 
-Cada entidad tiene una interfaz q es por doden se accesa a sus propiedades o ejecucion
+Solid principles
 
-Repository parten: Se enfoca en replicar cada entidad de dominio para ser manejada
+Desing pattern 
+Singleton
+Transient
+Scoped
 
-Unit Of Work: condensa todos los repositorio en una sola entidad
+Repository pattern
+Unit of Work pathern
+
+Swagger Documentation
+JWT implementation
+Queryfiltes
+Paginations
+BusinessExceptions
+Metadata
 
 
-Services: Accesa a las entidades mediante el unit of work y asi a sus funciones genericas de repositorio, ademas
-aqui se crean las reglas de negocio necesarias
 
-Controler se ejecutan las acceso definidas en la aplicacion. cada controlador lleva a cabo un proceso del sistema
